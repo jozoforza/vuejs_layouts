@@ -2,7 +2,16 @@
 </script>
 
 <template>
-  <div>Login 🔑</div>
+  <div>
+    Login 🔑
+    <br>
+    <br>
+    <form>
+      <input/>
+      <button type="submit">Submit</button>
+    </form>
+    <br>
+  </div>
 </template>
 
 <style>

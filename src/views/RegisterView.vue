@@ -2,7 +2,16 @@
 </script>
 
 <template>
-  <div>Register 📑</div>
+  <div>
+    Register 📑
+    <br>
+    <br>
+    <form>
+      <input/>
+      <button type="submit">Submit</button>
+    </form>
+    <br>
+  </div>
 </template>
 
 <style>

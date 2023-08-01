@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <p>About ❔</p>
-  </div>
+    <div>About ❔</div>
 </template>
 
 <style>

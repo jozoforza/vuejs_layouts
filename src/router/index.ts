@@ -44,7 +44,7 @@ const router = createRouter({
       path: '/response',
       name: 'response',
       meta: {layout: 'PlaygroundLayout'},
-      component: () => import('../views/Response.vue')
+      component: () => import('../views/ResponseView.vue')
     },
   ]
 })
