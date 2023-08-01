@@ -7,16 +7,45 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomeView,
+      meta: {layout: 'DashboardLayout'}
     },
     {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
+      meta: {layout: 'DashboardLayout'},
       component: () => import('../views/AboutView.vue')
-    }
+    },
+    {
+      path: '/profile',
+      name: 'profile',
+      meta: {layout: 'DashboardLayout'},
+      component: () => import('../views/ProfileView.vue')
+    },
+    {
+      path: '/login',
+      name: 'login',
+      meta: {layout: 'NoAuthLayout'},
+      component: () => import('../views/LoginView.vue')
+    },
+    {
+      path: '/register',
+      name: 'register',
+      meta: {layout: 'NoAuthLayout'},
+      component: () => import('../views/RegisterView.vue')
+    },
+    {
+      path: '/request',
+      name: 'request',
+      meta: {layout: 'PlaygroundLayout'},
+      component: () => import('../views/RequestView.vue')
+    },
+    {
+      path: '/response',
+      name: 'response',
+      meta: {layout: 'PlaygroundLayout'},
+      component: () => import('../views/Response.vue')
+    },
   ]
 })
 

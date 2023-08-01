@@ -15,15 +15,9 @@ const computed_value = computed(() => {return count.value + "_computed 🖥️"}
 
 <template>
   <header>
-    <h1>Apex charts!😆</h1>
-    <p>{{computed_value}}</p>
+    <h1>VueLayouts!↕️</h1>
   </header>
   <main>
-  <ol>
-  <li v-for="(item, index) in list">
-      {{item}}
-  </li>
-</ol>
   <div class="router_box">
     <RouterView />
   </div>
@@ -34,13 +28,15 @@ const computed_value = computed(() => {return count.value + "_computed 🖥️"}
     *{
       font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       text-align: center;
+      background-color: rgb(18, 18, 18);
+      color: rgb(197, 197, 197);
     }
     .router_box{
       padding: 5rem;
       border-style: dotted;
       margin: 2rem;
     }
-    ol{
+    /* ol{
       border-style:dotted;
       justify-self: center;
       width: 30px;
@@ -51,5 +47,5 @@ const computed_value = computed(() => {return count.value + "_computed 🖥️"}
       display: grid;
       grid-template-columns: 10% 90%;
       grid-template-rows: 100%;
-    }
+    } */
 </style>
